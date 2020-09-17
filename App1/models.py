@@ -26,4 +26,3 @@ class Attractions(models.Model):
     def __str__(self):
         return self.names
 
-class 
