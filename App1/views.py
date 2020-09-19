@@ -3,5 +3,5 @@ from App1.models import Regions
 from django.shortcuts import render
 
 def starter(request):
-    return render(request, 'index.html')
+    return HttpResponse(Regions.objects.filter(index=1))
 
