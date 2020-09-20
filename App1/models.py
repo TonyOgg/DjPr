@@ -1,6 +1,5 @@
 from django.db import models
 
-# Create your models here.
 
 class Regions(models.Model):
     index = models.IntegerField()
@@ -22,6 +21,7 @@ class Attractions(models.Model):
     category = models.CharField(max_length=30)
     description = models.TextField()
     dateoffoundation = models.DateField()
+    saving = models.BinaryField(default=False)
 
     def __str__(self):
         return self.names
