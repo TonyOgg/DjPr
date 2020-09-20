@@ -1,7 +1,8 @@
 from django.urls import path
-from App1.views import starter, sl
+from App1.views import starter, sl, current_datetime
 
 urlpatterns = [
     path('start_page', starter),
-    path('second', sl)
+    path('second', current_datetime),
+    path('thrd', sl)
 ]

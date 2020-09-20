@@ -21,7 +21,7 @@ class Attractions(models.Model):
     category = models.CharField(max_length=30)
     description = models.TextField()
     dateoffoundation = models.DateField()
-    saving = models.BinaryField(default=False)
+    saving = models.BooleanField(default=False)
 
     def __str__(self):
         return self.names
