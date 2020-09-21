@@ -17,3 +17,13 @@ def current_datetime(request):
     html = "<html><body>It is now %s.</body></html>" % now
     return HttpResponse(html)
 
+def page(request):
+    context = {
+        'header': 'Меню',
+        'menu': [
+            'Каталог',
+            'О нас',
+            'admin'
+        ]
+    }
+    return render(request, 'index.html', context)
